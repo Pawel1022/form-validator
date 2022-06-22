@@ -65,7 +65,7 @@ body {
 	}
 
 	&__error {
-		padding-top: 0.5em;
+		padding: 1em 0;
 		margin: 0 auto;
 		font-size: 1.5em;
 		visibility: hidden;
@@ -92,7 +92,7 @@ body {
 		color: #fff;
 		font-family: 'Nunito', sans-serif;
 		font-size: 1.8rem;
-		text-shadow: 1px 1px black;
+		text-shadow: 1px 1px rgb(0, 0, 0);
 		border-radius: 0.5em;
 		cursor: pointer;
 		transition: background-color 0.3s;
@@ -125,12 +125,11 @@ body {
 		align-items: center;
 		padding: 5em 6em;
 		transform: translate(-50%, -50%);
+		background-color: rgb(255, 255, 255);
+		border: 1px solid rgb(0, 0, 0);
+		border-radius: 1em;
 		z-index: 1;
-		background: rgba(255, 255, 255, 0.51);
-		border-radius: 16px;
-		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-		backdrop-filter: blur(3.4px);
-		border: 1px solid rgba(26, 24, 24, 0.849);
+		
 		transition: top 1s;
 
 		&-info {
@@ -141,7 +140,7 @@ body {
 		}
 
 		&--is-active {
-			top: 50%;
+			top: 80%;
 		}
 	}
 }
@@ -187,6 +186,11 @@ body {
 		margin: 30em 15em;
 
 		&__popup {
+			background: rgba(255, 255, 255, 0.51);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(3.4px);
+		border: 1px solid rgba(26, 24, 24, 0.849);
 			&--is-active {
 				top: 15%;
 			}
