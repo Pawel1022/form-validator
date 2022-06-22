@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Validator</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<form class="form">
+				<h1 class="form__heading">Zarejestruj się</h1>
+
+				<div class="form__box">
+					<label
+						for="form__input--username"
+						class="form__label form__label--username"
+						>Nazwa użytkownika:</label
+					>
+					<input
+						id="form__input--username"
+						type="text"
+						class="form__input form__input--username"
+						placeholder="Podaj nazwę użytkownika"
+					/>
+					<p class="form__error form__error--username">error</p>
+				</div>
+				<div class="form__box">
+					<label
+						for="form__input--password"
+						class="form__label form__label--password"
+						>Hasło:</label
+					>
+					<input
+						id="form__input--password"
+						type="password"
+						class="form__input form__input--password"
+						placeholder="Podaj hasło"
+					/>
+					<p class="form__error form__error--password">error</p>
+				</div>
+				<div class="form__box">
+					<label
+						for="form__input--password-repeat"
+						class="form__label form__label--password-repeat"
+						>Hasło:</label
+					>
+					<input
+						id="form__input--password-repeat"
+						type="password"
+						class="form__input form__input--password-repeat"
+						placeholder="Powtórz hasło"
+					/>
+					<p class="form__error form__error--password-repeat">error</p>
+				</div>
+				<div class="form__box">
+					<label for="form__input--email" class="form__label form__label--email"
+						>Adres E-mail:</label
+					>
+					<input
+						id="form__input--email"
+						type="email"
+						class="form__input form__input--email"
+						placeholder="Podaj E-mail"
+					/>
+					<p class="form__error form__error--email">error</p>
+				</div>
+
+				<div class="form__buttons">
+					<button class="form__btn form__btn--clear">Wyczyść</button>
+					<button class="form__btn form__btn--send">Wyślij</button>
+				</div>
+
+				<div class="form__popup">
+					<p class="form__popup-info">Formularz został poprawnie wysłany</p>
+					<button class="form__btn form__btn--close">Zamknij</button>
+				</div>
+			</form>
+		</div>
+
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>

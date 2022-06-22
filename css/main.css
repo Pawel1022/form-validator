@@ -1,0 +1,217 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form {
+  margin: 5em 2.5em;
+  padding: 5em 2em;
+  text-align: center;
+  border-radius: 2em;
+  background-color: rgba(251, 252, 255, 0.966);
+  -webkit-box-shadow: 0px 8px 40px 11px #b4b5bf;
+          box-shadow: 0px 8px 40px 11px #b4b5bf;
+}
+
+.form__heading {
+  padding-bottom: 2em;
+  font-size: 2rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.form__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 2em;
+  width: 100%;
+}
+
+.form__box-error input {
+  border: 1px solid #0089fa;
+  background-color: rgba(0, 137, 250, 0.11);
+}
+
+.form__input {
+  padding: 0.5em 1em;
+  width: 100%;
+  border: 1px solid #c5c5c5;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.form__label {
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.form__error {
+  padding-top: 0.5em;
+  margin: 0 auto;
+  font-size: 1.5em;
+  visibility: hidden;
+  color: #0089fa;
+  text-transform: uppercase;
+}
+
+.form__error-active {
+  visibility: visible;
+}
+
+.form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+}
+
+.form__btn {
+  padding: 0.5em 1em;
+  width: 100%;
+  background-color: rgba(0, 60, 255, 0.61);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px black;
+  border-radius: 0.5em;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.form__btn:nth-child(1) {
+  margin-right: 0.3em;
+}
+
+.form__btn:nth-child(1):hover {
+  background-color: #c03917;
+}
+
+.form__btn:nth-child(2):hover {
+  background-color: #1cd43b;
+}
+
+.form__btn--close {
+  width: 100%;
+}
+
+.form__popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -300%;
+  left: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5em 6em;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.51);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(3.4px);
+          backdrop-filter: blur(3.4px);
+  border: 1px solid rgba(26, 24, 24, 0.849);
+  -webkit-transition: top 1s;
+  transition: top 1s;
+}
+
+.form__popup-info {
+  font-size: 2em;
+  width: 100%;
+  text-transform: uppercase;
+  padding-bottom: 4em;
+}
+
+.form__popup--is-active {
+  top: 50%;
+}
+
+@media (min-width: 556px) {
+  .form {
+    margin: 20em 5em;
+  }
+  .form__input {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .form__heading {
+    font-size: 2.5em;
+  }
+  .form__label {
+    padding-bottom: 1em;
+    font-size: 2.2rem;
+    margin-left: 2em;
+  }
+  .form__error {
+    font-size: 2.2rem;
+  }
+  .form__buttons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .form__btn {
+    width: 25%;
+  }
+  .form__btn--close {
+    width: 100%;
+  }
+}
+
+@media (min-width: 776px) {
+  .form {
+    margin: 30em 15em;
+  }
+  .form__popup--is-active {
+    top: 15%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
